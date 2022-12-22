@@ -1,0 +1,38 @@
+{
+  "name": "@fe/calc",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "前端仓库-计算器",
+  "main": "lib/index.js",
+  "browser": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "unpkg": "lib/index.js",
+  "author": "13971332694@163.com",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "ci": "pnpm install --frozen-lockfile"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "calc",
+    "tools"
+  ],
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-visualizer": "^5.8.3",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^1.7.1"
+  },
+  "dependencies": {
+    "decimal.js": "^10.4.3"
+  }
+}
