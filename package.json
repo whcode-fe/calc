@@ -9,6 +9,14 @@
   "unpkg": "lib/index.js",
   "author": "13971332694@163.com",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whcode-fe/calc"
+  },
+  "bugs": {
+    "url": "https://github.com/whcode-fe/calc/issues"
+  },
+  "homepage": "https://github.com/whcode-fe/calc#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
