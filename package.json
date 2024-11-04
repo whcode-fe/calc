@@ -1,5 +1,5 @@
 {
-  "name": "@fe/calc",
+  "name": "@whcode/fe-calc",
   "version": "1.0.0",
   "type": "module",
   "description": "前端仓库-计算器",
