@@ -1,6 +1,6 @@
 {
   "name": "@whcode/fe-calc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "前端仓库-计算器",
   "main": "lib/index.js",
