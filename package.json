@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/whcode-fe/calc"
+    "url": "git+https://github.com/whcode-fe/calc.git"
   },
   "bugs": {
     "url": "https://github.com/whcode-fe/calc/issues"
