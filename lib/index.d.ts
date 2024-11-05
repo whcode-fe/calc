@@ -1,4 +1,4 @@
-declare const _default: {
+declare const calc: {
     /**
      * 加法运算
      * @param a 运算数1
@@ -24,4 +24,10 @@ declare const _default: {
      */
     divide: (a: number | string, b: number | string) => number;
 };
-export default _default;
+declare global {
+    interface Number {
+        toFixedNew: (len: number) => string;
+        countDecimals: (len: number) => number;
+    }
+}
+export default calc;
