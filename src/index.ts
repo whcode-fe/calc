@@ -7,6 +7,7 @@ const calc = {
    * @param b 运算数2
    */
   add: function (a: number | string, b: number | string): number {
+
     return new Decimal(a).add(new Decimal(b)).toNumber();
   },
   /**
@@ -32,6 +33,16 @@ const calc = {
    */
   divide: function (a: number | string, b: number | string): number {
     return new Decimal(a).div(new Decimal(b)).toNumber();
+  },
+
+  /**
+   * 向上保留小数
+   * @param value 数据
+   * @param num 保留小数位数
+   * @returns
+   */
+  saveCeilFloat: (value: number | string, num: number) => {
+    return calc.divide(Math.ceil(calc.multiply(value, Math.pow(10, num))), Math.pow(10, num)).toFixedNew(num);
   }
 };
 
@@ -42,7 +53,7 @@ declare global {
   }
 }
 /**
- * 扩展Number对象 实现传统的四舍五入
+ * 扩展Number对象 实现传统的四舍五入,解决例如parseFloat(123.675).toFixed(2) = 123.67 的问题
  * @param len 保留几位小数
  */
 Number.prototype.toFixedNew = function (len: number): string {
